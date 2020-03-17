@@ -1,0 +1,7 @@
+{
+  "name": "appTema",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
