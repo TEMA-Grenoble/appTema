@@ -63,7 +63,7 @@ export class LoginPage implements OnInit {
 		};
 	}
 
-	// Deconection
+	// Deconnection
 
 	logout() {
 		this.afAuth.auth.signOut();

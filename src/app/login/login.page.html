@@ -10,15 +10,15 @@
 	<div *ngIf="!connected">
 		<!-- Afficher si l'user est pas connecter -->
 		<ion-item>
-			<ion-label><b>Email:</b></ion-label>
+			<ion-label><b>E-mail:</b></ion-label>
 			<ion-input type="email" [(ngModel)]="dataUser.email"></ion-input>
 		</ion-item>
 		<ion-item>
-			<ion-label><b>Mot de passe:</b></ion-label>
+			<ion-label><b>Password:</b></ion-label>
 			<ion-input type="password" [(ngModel)]="dataUser.password"></ion-input>
 		</ion-item>
-		<ion-button expand="block" color="primary" (click)="login()">Connexion</ion-button>
-		<ion-button expand="block" color="tertiary" (click)="signUp()">Inscription</ion-button>
+		<ion-button expand="block" color="primary" (click)="login()">Sing in</ion-button>
+		<ion-button expand="block" color="tertiary" (click)="signUp()">Sing up</ion-button>
 	</div>
 
 	<div *ngIf="connected">
@@ -43,7 +43,7 @@
 			  	<h2><b>{{ mail }}</b></h2>
 			</ion-label>
 		</ion-item>
-		<ion-button expand="block" color="danger" (click)="logout()">Déconnexion</ion-button>
+		<ion-button expand="block" color="danger" (click)="logout()">Logout</ion-button>
 
 	</div>
 </ion-content>
