@@ -9,12 +9,7 @@ import { AngularFireDatabase } from '@angular/fire/database';
 export class Tab1Page {
 
 	constructor(
-		public AfDB: AngularFireDatabase
+		
 	) {}
 	
-	add() {
-		this.AfDB.list('User/').push({
-			pseudo: 'drissas'
-		});
-	}
 }
