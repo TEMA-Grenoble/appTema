@@ -17,8 +17,8 @@
 			<ion-label><b>Password:</b></ion-label>
 			<ion-input type="password" [(ngModel)]="dataUser.password"></ion-input>
 		</ion-item>
-		<ion-button expand="block" color="primary" (click)="login()">Sing in</ion-button>
-		<ion-button expand="block" color="tertiary" (click)="signUp()">Sing up</ion-button>
+		<ion-button expand="block" id="inButton" color="primary" (click)="login()">Sign in</ion-button>
+		<ion-button expand="block" id="upButton" color="tertiary" (click)="signUp()">Sign up</ion-button>
 	</div>
 
 	<div *ngIf="connected">
