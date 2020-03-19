@@ -1,24 +1,21 @@
-<ion-header>
-	<ion-toolbar>
-		<ion-title>
-			Login
-		</ion-title>
-	</ion-toolbar>
-</ion-header>
-
 <ion-content>
+	<div class=logo>
+		<ion-icon color="light" name="people-outline"></ion-icon>
+	</div>
 	<div *ngIf="!connected">
 		<!-- Afficher si l'user est pas connecter -->
 		<ion-item>
 			<ion-label><b>E-mail:</b></ion-label>
-			<ion-input type="email" [(ngModel)]="dataUser.email"></ion-input>
+			<ion-input placeholder="click here" type="email" [(ngModel)]="dataUser.email"></ion-input>
 		</ion-item>
 		<ion-item>
 			<ion-label><b>Password:</b></ion-label>
-			<ion-input type="password" [(ngModel)]="dataUser.password"></ion-input>
+			<ion-input placeholder="click here" type="password" [(ngModel)]="dataUser.password"></ion-input>
 		</ion-item>
+		<div id="coButton">
 		<ion-button expand="block" id="inButton" color="primary" (click)="login()">Sign in</ion-button>
 		<ion-button expand="block" id="upButton" color="tertiary" (click)="signUp()">Sign up</ion-button>
+		</div>
 	</div>
 
 	<div *ngIf="connected">
