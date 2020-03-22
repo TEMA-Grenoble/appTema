@@ -70,7 +70,7 @@ export class Tab2Page {
 			  this.map.setMapTypeId(GoogleMapsMapTypeId.NORMAL);
 			}
 		  }, {
-			text: 'Annuler',
+			text: 'Cancel',
 			role: 'cancel',
 			handler: () => {
 			  console.log('Cancel clicked');
@@ -78,6 +78,45 @@ export class Tab2Page {
 		  }]
 		});
 		await actionSheet.present();
-	  }
+	}
+
+	async addMarker() {
+		const alert = await this.alertController.create({
+		  header: 'Add place',
+		  inputs: [
+			{
+			  name: 'title',
+			  type: 'text',
+			  placeholder: 'Title'
+			}
+		  ],
+		  buttons: [
+			{
+			  text: 'Cancel',
+			  role: 'cancel',
+			  cssClass: 'secondary',
+			  handler: () => {
+				console.log('Confirm Cancel');
+			  }
+			}, {
+			  text: 'Add',
+			  handler: data => {
+				console.log('Title: ' + data.title);
+				this.placeMarker(data.title);
+			  }
+			}
+		  ]
+		});
+		await alert.present();
+	}
+
+	placeMarker(markerTitle: string) {
+		const marker: Marker = this.map.addMarkerSync({
+			title: markerTitle,
+			icon: 'red',
+			animation: 'DROP',
+			position: this.map.getCameraPosition().target
+		});
+	}
 
 }
