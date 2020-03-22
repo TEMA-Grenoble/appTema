@@ -39,8 +39,8 @@ export class Tab2Page {
 
 	loadMap() {
 		Environment.setEnv({
-			API_KEY_FOR_BROWSER_RELEASE: 'AIzaSyDf6CM_51ZzUJARza_MvD9R2b1gqqVKQB4',
-			API_KEY_FOR_BROWSER_DEBUG: 'AIzaSyDf6CM_51ZzUJARza_MvD9R2b1gqqVKQB4',
+			API_KEY_FOR_BROWSER_RELEASE: 'YOUR API KEY',
+			API_KEY_FOR_BROWSER_DEBUG: 'YOU API KEY',
 		});
 		this.map = GoogleMaps.create('map_canvas', {
 			camera: {
