@@ -107,4 +107,5 @@ dist
 platforms/
 resources/
 wwww/
+www\
 plugins/
