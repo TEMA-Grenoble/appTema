@@ -14,6 +14,8 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 
+import { Geolocation } from '@ionic-native/geolocation';
+
 import { environment } from '../environments/environment';
 
 @NgModule({

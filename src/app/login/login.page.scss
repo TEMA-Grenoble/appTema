@@ -17,8 +17,7 @@ ion-item {
 
 		// Logo
 
-
-.logo ion-icon{
+.logo ion-img{
     font-size: 9em;
     position: absolute;
     top: 50%;
@@ -33,6 +32,7 @@ ion-item {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .logo {
     position: relative;
     height: 250px;

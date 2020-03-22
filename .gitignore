@@ -105,6 +105,5 @@ dist
 
 # Plugins
 platforms/
-resources/
 www/
 plugins/

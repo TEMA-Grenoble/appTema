@@ -1,3 +1,38 @@
-ion-content ion-toolbar {
-  	--background: translucent;
+		// Background
+
+.padding {
+	padding: 5%!important;
+	display: flex;
+	flex-direction: column;
+}
+		
+ion-content {
+	--ion-background-color: linear-gradient(to left bottom, #e03b3f, #302e4e);
+}
+		
+ion-item {
+	--ion-item-background: rgba(0, 0, 0, 0);
+}
+
+		// Logo
+
+.logo ion-img{
+    font-size: 9em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo img{
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    position: relative;
+    height: 250px;
 }

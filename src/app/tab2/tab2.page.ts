@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { 
 	ActionSheetController,
 	Platform,
@@ -40,8 +39,8 @@ export class Tab2Page {
 
 	loadMap() {
 		Environment.setEnv({
-			API_KEY_FOR_BROWSER_RELEASE: '',
-			API_KEY_FOR_BROWSER_DEBUG: '',
+			API_KEY_FOR_BROWSER_RELEASE: 'AIzaSyDf6CM_51ZzUJARza_MvD9R2b1gqqVKQB4',
+			API_KEY_FOR_BROWSER_DEBUG: 'AIzaSyDf6CM_51ZzUJARza_MvD9R2b1gqqVKQB4',
 		});
 		this.map = GoogleMaps.create('map_canvas', {
 			camera: {
